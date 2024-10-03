@@ -21,5 +21,20 @@ public class Main {
         CalcullatoCumNumber calcullatoCumNumber = new CalcullatoCumNumber(number);
         System.out.println(calcullatoCumNumber);
 
+
+        System.out.println("Authors:");
+        Library stephenKing = new Library("Stephen", "King");
+        Library stephenKing2 = new Library("Stephen", "King");
+        Library levTolstoy = new Library("Lev", "Tolstoy");
+        System.out.println("Author copies equal: " + stephenKing.equals(stephenKing2));
+        System.out.println("Author copies equal by hashCode: " + (stephenKing.hashCode() == stephenKing2.hashCode()));
+        System.out.println("Authors equal: " + stephenKing.equals(levTolstoy));
+        System.out.println("Authors equal by hashCode: " + (stephenKing.hashCode() == levTolstoy.hashCode()));
+
+
+        System.out.println(stephenKing);
+        System.out.println(levTolstoy);
+
+
     }
 }
