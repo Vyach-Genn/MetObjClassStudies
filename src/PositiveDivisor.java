@@ -4,7 +4,7 @@ public class PositiveDivisor {
     public PositiveDivisor(int value) {
         this.value = value;
     }
-
+    // Напишите программу, которая выводит в консоль все положительные делители натурального числа.
     public String findingDivisors(int value) {
         if (value <= 0) {
             throw new IllegalArgumentException("Значение должно быть положительным");

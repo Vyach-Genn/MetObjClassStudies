@@ -6,7 +6,8 @@ public class MainServis {
     public MainServis(String word) {
         this.word = word;
     }
-
+    // Написать программу, которая будет проверять, является ли слово из пяти букв, палиндромом
+    // (примеры: «комок», «ротор») и возвращает true/false.
     public boolean checkPalindrome(String word) {
         if (word.length() != 5) {
             throw new IllegalArgumentException("Слово должно содержать 5 букв");
