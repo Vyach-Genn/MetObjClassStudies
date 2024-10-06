@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
         // Написать программу, которая будет проверять, является ли слово из пяти букв, палиндромом
@@ -17,9 +19,11 @@ public class Main {
 
         //Напишите программу, которая считает сумму всех чисел многозначного числа и выводит ее в консоль.
         System.out.println("task 3");
-        int number = 1239513;
-        CalcullatoCumNumber calcullatoCumNumber = new CalcullatoCumNumber(number);
-        System.out.println(calcullatoCumNumber);
+        Random random = new Random();
+        int numberRandom =0+ random.nextInt(1000000000);
+        CalcullatoCumNumber calcullatoCumNumber = new CalcullatoCumNumber();
+        System.out.printf("Сумма цифр числа %d равна %d",numberRandom, calcullatoCumNumber.weCalculateTheSumOfNumbers(numberRandom));
+        System.out.println();
 
 
         System.out.println("Authors:");
