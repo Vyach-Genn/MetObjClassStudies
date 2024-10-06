@@ -20,7 +20,7 @@ public class Main {
         //Напишите программу, которая считает сумму всех чисел многозначного числа и выводит ее в консоль.
         System.out.println("task 3");
         Random random = new Random();
-        int numberRandom =0+ random.nextInt(1000000000);
+        int numberRandom = random.nextInt(0,1000000000);
         CalcullatoCumNumber calcullatoCumNumber = new CalcullatoCumNumber();
         System.out.printf("Сумма цифр числа %d равна %d",numberRandom, calcullatoCumNumber.weCalculateTheSumOfNumbers(numberRandom));
         System.out.println();
